@@ -54,14 +54,14 @@ input.onButtonPressed(Button.A, function () {
 /**
  * 這邊還沒用好
  * 
- * (要用依光線決定那個)
+ * 功能正常但很像不太對
  */
 input.onButtonPressed(Button.B, function () {
     if (input.lightLevel() == 0) {
         h = 25
-    } else if (input.lightLevel() > 235) {
+    } else if (input.lightLevel() > 235 && input.lightLevel() < 255) {
         h = 2
-    } else if (input.lightLevel() > 215) {
+    } else if (input.lightLevel() > 215 && input.lightLevel() < 235) {
         h = 3
     } else if (input.lightLevel() > 195) {
         h = 5
@@ -79,7 +79,7 @@ input.onButtonPressed(Button.B, function () {
         h = 17
     } else if (input.lightLevel() > 55) {
         h = 19
-    } else if (input.lightLevel() < 35) {
+    } else if (input.lightLevel() > 35) {
         h = 21
     } else if (input.lightLevel() > 15) {
         h = 23
