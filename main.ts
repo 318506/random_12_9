@@ -54,7 +54,11 @@ input.onButtonPressed(Button.A, function () {
 /**
  * 這邊還沒用好
  * 
- * 功能正常但很像不太對
+ * 功能正常但燈數很像不太對
+ * 
+ * 不要在意這個細節
+ * 
+ * (´∀` )
  */
 input.onButtonPressed(Button.B, function () {
     if (input.lightLevel() == 0) {
